@@ -206,6 +206,9 @@ body, html {
     flex-direction: row; 
     align-items: center; 
     justify-content: center; 
+    flex-direction: row; /* Stacks elements vertically */
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers content vertically */
     padding: 50px 0;
     text-align: center;
   }
