@@ -3,8 +3,8 @@ body{
 }
 #navbar {
     display: flex;
-    align-items: center; /* Aligns items vertically */
-    justify-content: space-between; /* Distributes space between logo and links */
+    align-items: center; 
+    justify-content: space-between; 
     overflow: hidden;
     padding: 10px 10px;
     transition: 0.4s;
@@ -13,7 +13,7 @@ body{
     top: 0;
     z-index: 99;
   }
-  /* Style the navbar links */
+
   #navbar a {
     float: left;
     color: black;
@@ -25,7 +25,6 @@ body{
     border-radius: 8px;
   }
   
-  /* Style the logo */
   #navbar #logo {
     height: 40px;
     width:auto;
@@ -33,20 +32,17 @@ body{
     margin-left: 15px;
   }
   
-  /* Links on mouse-over */
   #navbar a:hover {
     background-color: #994e4e;
     color: rgb(255, 255, 255);
 
   }
   
-  /* Style the active/current link */
   #navbar a.active {
     background-color: #5c2323;
     color: white;
   }
   
-  /* Display some links to the right */
   #navbar-right {
     float: right;
     display: flex;
@@ -202,7 +198,7 @@ body, html {
     font-size: 50px;
     margin-bottom: 50px;
   }
-  
+
   #contact {
     display: flex;
     flex-direction: row; /* Stacks elements vertically */
@@ -226,3 +222,4 @@ body, html {
   #contact p{
     font-size: 30px;
   }
+
