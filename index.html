@@ -4,17 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My landing page</title>
-    <!-- CHANGE THESE VALUES -->
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   </head>
   <body>
     <nav id="navbar">
       <img src="images/logo.jpg" id="logo" alt="ave logo">
       <div id="navbar-right">
         <a href="#hero" class="active">Home</a>
-        <a href="#value-proposition">Why us?</a>
         <a href="#products">Products</a>
+        <a href="#value-proposition">Reviews</a>
         <a href="#contact">Contact</a>
 
       </div>
@@ -29,8 +31,39 @@
       </div>
 
     </section>
-    <section id="value-proposition" id="section">
-      value-proposition
+    <section id="products" id="section">
+      <div class="small-container">
+      <ul class="menu">
+        <li><h2>Products</h2></li>
+        <li><button type="button" class="hero-button">See More</button></li>
+    </ul>    
+      <div class="row">
+        <div class="col-4">
+          <img src="images/product1.jpg">
+          <h4>Product 1</h4>
+          <p>25 $</p>
+          <button type="button" class="hero-button">Buy Now</button>
+        </div>
+        <div class="col-4">
+          <img src="images/product2.jpg">
+          <h4>Product 1</h4>
+          <p>25 $</p>
+          <button type="button" class="hero-button">Buy Now</button>
+        </div>
+        <div class="col-4">
+          <img src="images/product3.jpg">
+          <h4>Product 1</h4>
+          <p>25 $</p>
+          <button type="button" class="hero-button">Buy Now</button>
+        </div>
+        <div class="col-4">
+          <img src="images/product4.jpg">
+          <h4>Product 1</h4>
+          <p>25 $</p>
+          <button type="button" class="hero-button">Buy Now</button>
+        </div>
+      </div>
+    </div>
 
     </section>
 
