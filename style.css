@@ -203,3 +203,26 @@ body, html {
     margin-bottom: 50px;
   }
   
+  #contact {
+    display: flex;
+    flex-direction: row; /* Stacks elements vertically */
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers content vertically */
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+
+  #contact h1{
+    font-size: 30px;
+
+  }
+
+  #contact img{
+    width: 10%;
+    height: auto;
+  }
+
+  #contact p{
+    font-size: 30px;
+  }
