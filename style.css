@@ -318,7 +318,7 @@ body, html {
   .col-4 {
     width: 31%;
   }
-  
+
   #navbar a {
     padding: 15px;
     font-size: 18px;
@@ -326,6 +326,18 @@ body, html {
   
   .hero-title {
     font-size: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .col-4 {
+    width: 23%;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #010101;
+    border-radius: 10px;
+    margin-bottom: 15px;
   }
   
   #about {
@@ -361,9 +373,20 @@ body, html {
   .col-4 {
     width: 23%;
   }
-  
+
   #about {
     padding: 150px 20px;
+
+  #contact {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: row; /* Stacks elements vertically */
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers content vertically */
+    padding: 50px 0;
+    text-align: center;
   }
   
   #contact img {
