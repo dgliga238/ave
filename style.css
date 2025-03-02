@@ -414,24 +414,27 @@ body, html {
     display: block;
   }
   
-  #navbar{
+  #navbar {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
   }
   
   #navbar-right {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    margin-top: 10px;
-    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px 0;
   }
 
-  #navbar a {
-    width: 100%;
-    margin: 2px 0;
-    text-align: left;
-    font-size: 16px;
+  #navbar-right a {
+    padding: 8px;
+    font-size: 14px;
+    margin: 2px;
+    text-align: center;
+    min-width: fit-content;
   }
 
   #contact img {
