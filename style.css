@@ -9,7 +9,6 @@ body {
   box-sizing: inherit;
 }
 
-/* Sticky Navbar */
 #navbar {
   display: flex;
   align-items: center;
@@ -142,7 +141,8 @@ body, html {
 .small-container {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 30px;
+  margin-top: 50px;
 }
 
 .menu {
@@ -196,6 +196,7 @@ body, html {
 .col-4 button {
   margin-top: 15px;
   margin-bottom: 10px;
+  margin-left: 0;
 }
 
 #about {
@@ -248,6 +249,68 @@ body, html {
   font-size: 18px;
 }
 
+#mascot-box{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+}
+
+#mascot{
+  cursor: pointer;
+  animation: float 2s ease-in-out infinite;
+
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.img-mascot {
+  width: 80px;
+  height: auto;
+}
+
+#mascot:hover + #mascot-message,
+#mascot-message:hover {
+  display: block;
+}
+
+#mascot-message {
+  position: absolute;
+  bottom: 120px;
+  right: 0;
+  background: rgba(69, 25, 25, 0.8);
+  color: #fffefe;
+  padding: 15px;
+  border-radius: 10px;
+  width: 200px;
+  display: none;
+  border: 2px solid #542a2a;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(60, 35, 35, 0.6);
+}
+
+#mascot-message:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  right: 50px;
+  border-width: 10px 10px 0;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.8) transparent transparent;
+}
+
+
+
 
 /* (phones, 576px and up) */
 @media (min-width: 576px) {
@@ -259,7 +322,7 @@ body, html {
   }
 
   .col-4 {
-    width: 48%;
+    width: 30%;
   }
   
   .hero-title {
@@ -281,7 +344,7 @@ body, html {
   .col-4 {
     width: 31%;
   }
-
+  
   #navbar a {
     padding: 15px;
     font-size: 18px;
@@ -289,18 +352,6 @@ body, html {
   
   .hero-title {
     font-size: 3rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .col-4 {
-    width: 23%;
-    padding: 15px;
-    box-sizing: border-box;
-    border: 1px solid #010101;
-    border-radius: 10px;
-    margin-bottom: 15px;
   }
   
   #about {
@@ -336,20 +387,9 @@ body, html {
   .col-4 {
     width: 23%;
   }
-
+  
   #about {
     padding: 150px 20px;
-
-  #contact {
-    display: flex;
-    flex-direction: row; 
-    align-items: center; 
-    justify-content: center; 
-    flex-direction: row; /* Stacks elements vertically */
-    align-items: center; /* Centers items horizontally */
-    justify-content: center; /* Centers content vertically */
-    padding: 50px 0;
-    text-align: center;
   }
   
   #contact img {
