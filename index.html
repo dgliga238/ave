@@ -6,36 +6,40 @@
     <title>My landing page</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav id="navbar">
-        <img src="images/logo.jpg" id="logo" alt="ave logo">
-      <div id="navbar-right">
-        <a href="#hero">Home</a>
-        <a href="#reviews" class="mobile-only">Reviews</a>
-        <a href="#products">Products</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+    <nav class="fixed top-0 w-full bg-white shadow-md z-50">
+      <div class="container mx-auto flex flex-col md:flex-row justify-between items-center p-4">
+        <img src="images/logo.jpg" id="logo" alt="ave logo" class="h-10 mb-4 md:mb-0">
         
-    </div>
-
+        <div class="flex flex-row flex-wrap justify-center md:justify-end w-full gap-2">
+          <a href="#hero" class="text-black px-4 py-2 rounded-lg hover:bg-red-900 hover:text-white transition">Home</a>
+          <a href="#reviews" class="text-black px-4 py-2 rounded-lg hover:bg-red-900 hover:text-white transition md:hidden">Reviews</a>
+          <a href="#products" class="text-black px-4 py-2 rounded-lg hover:bg-red-900 hover:text-white transition">Products</a>
+          <a href="#about" class="text-black px-4 py-2 rounded-lg hover:bg-red-900 hover:text-white transition">About</a>
+          <a href="#contact" class="text-black px-4 py-2 rounded-lg hover:bg-red-900 hover:text-white transition">Contact</a>
+        </div>
+      </div>
     </nav>
     <div id="mascot-box">
     <div id="mascot"><img src="images/black-mascot.png" class="img-mascot" alt="mascot"></div>
     <div id="mascot-message">Time for Shopping</div>
   </div>
-    <section id="hero" class="section">
-      <div class="hero-content">
-        <h1 class="hero-title">AVE ACTIVEWEAR</h1>
-        <h2 class="hero-subtitle"> Designed with love to wear with confidence</h2>
-        <button type="button" class="hero-button" onclick="alert('to be continued')">Buy NOW</button>
-
-      </div>
-
-    </section>
+  <section id="hero" class="relative w-full h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('images/hero.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div> 
+    <div class="relative text-center text-white px-6 max-w-3xl">
+      <h1 class="text-5xl md:text-6xl font-bold">AVE ACTIVEWEAR</h1>
+      <h2 class="text-lg md:text-2xl font-light mt-4">Designed with love to wear with confidence</h2>
+      <button class="mt-6 bg-red-900 bg-opacity-60 hover:bg-red-900 text-white text-lg px-6 py-3 rounded-lg transition-all" onclick="alert('to be continued')">
+        Buy NOW
+      </button>
+    </div>
+  </section>
+  
     <section id="reviews" class="section" class="section-mobile-only">
       <div class="small-container">
         <div><h1>Reviews:</h1></div>
@@ -90,9 +94,9 @@
 </div>
     </section>
     <section id="contact" class="section">
-        <h1>Contact us:</h1>
-        <a href="https://www.instagram.com/ave.activewear/"><img src="images/instagram.png"></a>
-        <p>+37369698745</p>
+      <h1>Contact us:</h1>
+      <a href="https://www.instagram.com/ave.activewear/"><img src="images/instagram.png"></a>
+      <p>+37369698745</p>
     </section>
 
   </body>
