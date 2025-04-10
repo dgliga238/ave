@@ -9,6 +9,10 @@
 /* Import Tailwind's utility styles */
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Libre Baskerville", serif;
   margin: 0;
@@ -20,19 +24,6 @@ body {
   box-sizing: inherit;
 }
 
-#navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  transition: 0.4s;
-  width: 100%;
-  position: fixed; 
-  top: 0;
-  z-index: 99;
-  background-color: white; 
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
-}
 
 #navbar a {
   display:flexbox;
@@ -71,9 +62,7 @@ body {
   padding-top: 60px; /* Adjust based on your navbar height */
 }
 
-#section {
-  min-height: 100vh;
-  padding: 4rem 1rem;
+.section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,15 +72,6 @@ body {
 
 body, html {
   height: 100%;
-}
-
-#hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #hero::before {
@@ -105,7 +85,7 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  filter: brightness(60%);
+  filter: brightness(100%);
 }
 
 .hero-content {
@@ -188,6 +168,9 @@ body, html {
   border: 1px solid #010101;
   border-radius: 10px;
   margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .col-4 img {
@@ -208,6 +191,10 @@ body, html {
   margin-top: 15px;
   margin-bottom: 10px;
   margin-left: 0;
+}
+
+.col-4:hover {
+  transform: translateY(-10px);
 }
 
 #about {
@@ -243,6 +230,7 @@ body, html {
   justify-content: center;
   padding: 40px 20px;
   text-align: center;
+  cursor: pointer;
 }
 
 #contact h1 {
@@ -256,6 +244,10 @@ body, html {
   height: auto;
   margin: 10px;
 
+}
+
+#contact img:hover{
+  transform: translateY(-5px);
 }
 
 #contact p {
@@ -460,3 +452,6 @@ body, html {
   }
 
 }
+
+
+
